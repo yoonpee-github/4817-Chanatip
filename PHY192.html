@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polarization</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&family=Kanit:wght@300&display=swap" rel="stylesheet">    
+    <style>
+        .header {
+            background-color: #aebdb0;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 60px;
+            text-shadow: 7px 7px 10px rgb(41, 61, 47);
+        }
+        .header h1{
+            font-size: 60px;
+            font-family: 'Kanit', sans-serif;
+        }
+        .header p{
+            font-family: 'Kanit', sans-serif;
+            font-size: 40px;
+            color: rgb(37, 54, 42);
+        }
+        .main h1{
+            font-family: 'Kanit', sans-serif;
+            font-size: 30px;
+            text-decoration-line:underline;
+            color: rgb(192, 228, 195);
+        }
+        .main p {
+            text-align: left;
+            font-family: 'Kanit', sans-serif;
+        }
+        .main {
+            background-color: #4c554e;
+            font-family: 'Kanit', sans-serif;
+            font-size: 20px;
+        }
+        .pre h1 {
+            font-family: 'Kanit', sans-serif;
+            font-size: 24px;
+        }
+        .footer {
+            background-color: #4c554e;
+        }
+        .footer h1 {
+            font-family: 'Kanit', sans-serif;
+            font-size: 30px;
+            text-decoration-line:underline;
+            color: rgb(192, 228, 195);
+        }
+        .footer p {
+            font-size: 24px;
+            color: rgb(192, 228, 195);
+            font-size: 25px;
+
+        }
+        .aside1 {
+            background-color: #aebdb0;
+        }
+        .aside1 h1 {
+            font-family: 'Kanit', sans-serif;
+            font-size: 30px;
+            text-decoration-line:underline;
+        }
+        .aside1 p {
+            
+            font-size: 24px;
+        }
+        .aside2 {
+            background-color: #aebdb0;
+        }
+        .aside2 h1 {
+            font-family: 'Kanit', sans-serif;
+            font-size: 24px;
+            text-decoration-line:underline;
+        }
+        .container * {
+            padding: 15px;
+            margin: 20px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 20px;
+            flex-basis: 100%;
+            flex-grow: 1;
+        }
+        .container {
+            display: flex;
+            flex-flow: wrap;
+        }
+        @media all and (min-width:800px) {
+            .main {flex: 3;order: 2;}
+            .aside1 {order: 1;}
+
+            .aside2 {order: 3;}
+            .footer {order: 4;}
+        }
+        @media all and (min-width:600px) {
+            .aside {flex: 1;}
+        }
+        .h1 {
+            font-family: 'Kanit', sans-serif;
+            text-align: center;
+            font-size: 30px;
+            color: rgb(37, 54, 42);
+        }
+        .p{
+            font-size: 25px;
+            
+        }
+        .h11{
+            font-family: 'Kanit', sans-serif;
+            text-align: center;
+            font-size: 30px;
+            color: rgb(192, 228, 195);
+        }
+        div p{
+            color: rgb(37, 54, 42);
+        }
+    </style>
+</head>
+<body bgcolor="#E0DEDC">
+    <div class="container">
+        <div class="header">
+            <h1 class="h1">LABPHY192</h1>
+            <p>เรื่อง Polarization</p>
+        </div>
+        <div class="main">
+            <pre class="h11">
+         <h1>ขั้นตอนในการทดลอง</h1>
+         ตอนที่1 เปิดแหล่งกำเนิดแสงและปรับองศาไปให้มีค่าน้อยที่สุด แล้วบันทึกค่า
+         <img src="14.PNG", width= 400px , height= 300px;>
+         <img src="15.PNG", width= 400px , height= 300px;>
+         ตอนที่2 ปรับองศาไปให้มีค่า LUX มากที่สุดแล้วบันทึกค่า       
+         <img src="16.PNG", width= 400px , height= 300px;>       
+         ตอนที่3 ปรับองศาจากค่ามากสุดให้ลดลงที่ละ 10 องศา
+         <img src="17.PNG", width= 400px , height= 300px;> 
+            </pre>
+        </div>
+        <div class="aside1 aside">
+            <h1 class="h1">อุปกรณ์ในการทดลอง</h1>
+            <p>1.LIGHT SOURCE<br><img src="9.PNG", width= 200px , height= 150px;></p>
+            <p>2.PORALIZING FILTER<br><img src="6.PNG", width= 200px , height= 150px;></p>
+            <p>3.INTENSITY CONTROLLER<br><img src="7.PNG", width= 200px , height= 150px;></p>
+            <p>4.LUX METER<br><img src="8.PNG", width= 200px , height= 150px;></p>
+        </div>
+        <div class="aside2 aside">
+            <h1 class="h1">วัดถุประสงค์</h1>
+            <p class="p">เพื่อศึกษาความสัมพันธ์ระหว่างความเข้มของแสงที่ผ่านแผ่นฟิวเตอร์ 2 แผ่นโดยที่แกนทำมุมระหว่างกัน</p>
+            <h1 class="h1">สมการที่เกี่ยวข้อง</h1>
+            <img src="10.PNG", width= 200px , height= 150px;>
+            <img src="11.PNG", width= 200px , height= 150px;>
+            <img src="12.PNG", width= 200px , height= 150px;>
+            <img src="13.PNG", width= 200px , height= 150px;>
+            <h1 class="h1">ทฤษฎี</h1>
+            <p class="p">Polarization เป็นสมบัติของคลื่นตามขวางจะใช้คลื่นแสงเป็นคลื่นแม่เหล็กไฟฟ้า มีการสั่นหลสยระนาบ เป็น Unpolarized ฉายแสงใส่แผ่นฟิวเตอร์จะเป็นแสงที่ Polarization แล้ว</p>
+        </div>
+        <div class="footer">
+            <h1>VDO ประกอบการทดลอง</h1>
+            <p>(ทฤษฎี)</p>
+            <iframe width="650" height="500" src="https://www.youtube.com/embed/15aCReb_yR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            <p>(สาธิตการทดลอง)</p>
+            <iframe width="650" height="500" src="https://www.youtube.com/embed/-mC1J6em84k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+</body>
+</html>

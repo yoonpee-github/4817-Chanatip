@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <script>
+        function basicCalculation(){
+            var n1 = parseFloat(document.getElementById("num1").value);
+            var n2 = parseFloat(document.getElementById("num2").value);
+            var res;
+            var operation = document.getElementById("operator").value
+            if(operation ==="+"){
+                res = n1+n2;
+            }
+            if(operation ==="-"){
+                res = n1-n2;
+            }
+            if(operation ==="*"){
+                res = n1*n2;
+            }
+            if(operation ==="/"){
+                res = n1/n2;
+            }
+            document.getElementById("result").value = res.toFixed(2);
+        }
+    </script>
+    <script>
+        function CtoF(){
+            let C = parseFloat(document.getElementById("cel").value);
+            let F = (C*9/5)+32;
+            document.getElementById("fah").value = F.toFixed(2);
+        }
+        function FtoC(){
+            let F = parseFloat(document.getElementById("fah").value);
+            let C = (F-32)*(5/9)
+            document.getElementById("cel").value = C.toFixed(2);
+        }
+    </script>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 650px;
+        }
+        .Calculator{
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            border-radius: 20px;
+            background-color: greenyellow;
+            padding: 15px;
+            margin: 20px;
+            padding-left: 40px;
+            font-family:sans-serif;
+        }
+        .Calculator h1{
+            text-align: center;
+        }
+        .Calculator input{
+            background-color: violet;
+        }
+        .Calculator button{
+            background-color: rgb(118, 134, 228);
+        }
+        .Calculator select{
+            background-color: wheat;
+        }
+        .TempConversion{
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            border-radius: 20px;
+            background-color: greenyellow;
+            padding: 15px;
+            margin: 20px;
+            padding-left: 40px;
+            font-family: sans-serif;          
+        }
+        .TempConversion h1{
+            text-align: center;
+        }
+        .TempConversion input{
+            background-color: violet;
+        }
+        .TempConversion button{
+            background-color: rgb(118, 134, 228);
+        }
+        h1{
+            font-size: 20px;
+        }
+        body{
+            background-color: rgb(240, 228, 179);
+        }
+        h2{
+            text-align: center;
+            font-size: 50px;
+            font-family:sans-serif;
+            color: rgb(228, 0, 76);
+            text-shadow: 5px 5px 10px rgb(236, 115, 155);
+        }
+        .div h3{
+            color: rgb(68, 0, 146);
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            text-shadow: 5px 5px 10px rgb(139, 107, 177);
+        }
+        .div pre{
+            font-size: 20px;
+            color: rgb(112, 10, 70);
+        }
+        img{
+            margin-left: 850px;
+            border-radius: 60px;
+            border: 7px solid #ce620a;
+            box-shadow: 5px 5px 10px  #e6893d;
+        }
+    </style>  
+</head>
+<body>
+    <h2>Temperature Conversion</h2>
+    <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Anders-Celsius-Head.jpg/173px-Anders-Celsius-Head.jpg" alt="">
+    <div class="div">
+        <h3>องศาเซลเซียส</h3>
+        <pre>      องศาเซลเซียส (อังกฤษ: degree Celsius, สัญลักษณ์ °C) หรือที่เคยเรียกว่า องศาเซนติเกรด (อังกฤษ: degree centigrade) เป็นหน่วยวัดอุณหภูมิหน่วยหนึ่งในระบบเอสไอ กำหนดให้จุดเยือกแข็งของน้ำคือ 0 °C และจุดเดือด
+    คือ 100 °C โดยตั้งชื่อเพื่อเป็นเกียรติแก่แอนเดอร์ เซลเซียส ผู้ซึ่งสร้างระบบใกล้เคียงกับปัจจุบัน
+
+      ในปัจจุบันองศาเซลเซียสใช้กับแพร่หลายทั่วโลกในชีวิตประจำวัน จะยกเว้นก็มีสหรัฐและประเทศจาเมกาเท่านั้นที่นิยมใช้หน่วยองศาฟาเรนไฮต์ แต่ในประเทศดังกล่าว องศาเซลเซียสและเคลวินก็ใช้มากในด้านวิทยาศาสตร์</pre>
+   <h3>องศาฟาเรนไฮต์</h3>
+        <pre>      องศาฟาเรนไฮต์ คือหน่วยมาตรวัดอุณหภูมิชนิดหนึ่ง ตั้งชื่อตามนักฟิสิกส์ชาวเยอรมัน กาเบรียล ฟาเรนไฮต์ (ค.ศ. 1686-1736) ผู้เสนอระบบมาตรวัดอุณหภูมินี้เมื่อปี ค.ศ.1724 องศาฟาเรนไฮต์เขียนย่อโดยใช้สัญลักษณ์ °F โดยที่
+    ค่าสเกลองศาฟาเรนไฮต์มีจุดอ้างอิงต่ำสุดที่ 0°F เป็นอุณหภูมิจุดเยือกแข็งของ น้ำ น้ำแข็ง และ เกลือแอมโมเนียมคลอไรด์ องศาฟาเรนไฮต์เป็นมาตรวัดอุณหภูมิแรกที่มีการใช้งานกันอย่างแพร่หลาย
+
+      ในปัจจุบัน องศาฟาเรนต์ไฮต์ใช้จุดแข็งและจุดเดือดของน้ำเป็นจุดอ้างอิง โดยมีจุดเยือกแข็งอยู่ที่ 32°F และ มีจุดเดือดที่ 212°F โดยที่มีระยะห่างระหว่างจุดเยือกแข็งกับจุดเดือดของน้ำคือ 180 องศา ณ ความดันบรรยากาศมาตรฐาน 
+    ณ ระดับน้ำทะเล
+
+      โดยเมื่อเปรียบเทียบกับองศาเซลเซียส อุณภูมิที่เพิ่มขึ้น 1 32°F มีค่าเท่ากับ 5/9 (ประมาณ 0.56) ของ 1°C (ซึ่งก็คือ 1 เคลวิน) และที่ระดับอุณหภูมิ -40 °F จะมีค่าเท่ากับ -40 °C</pre>
+    </div>
+    <div class="container">
+    <!-- Basic Calculation -->
+        <div class="Calculator">
+            <h1>Basic Calculator</h1>
+            <label for="">NUMBER1</label>
+            <br>
+            <input type="text" name="" id="num1" size="10">
+            <select name="" id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <br>
+            <label for="">NUMBER2</label>
+            <br>
+            <input type="text" name="" id="num2" size="10">
+            <br>
+            <label for="">RESLT</label>
+            <br>
+            <input type="text" name="" id="result" size="10">
+            <button onclick="basicCalculation()">ENTER</button>
+        </div>
+    <!-- Temperature Conversion -->
+         <div class="TempConversion">
+            <h1>Temperature Conversion</h1>
+            <label for="">CELCIUS(&#8451;)</label>
+            <br>
+            <input type="text" name="" id="cel" size="10">
+            <button onclick="CtoF()">C to F</button>
+            <br>
+            <label for="">FAHRENHEIT(&#8457;)</label>
+            <br>
+            <input type="text" name="" id="fah" size="10">
+            <button onclick="FtoC()">F to C</button> 
+         </div>    
+    </div>
+</body>
+</html>
