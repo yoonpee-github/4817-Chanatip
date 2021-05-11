@@ -30,8 +30,8 @@
         }
         .Calculator{
             width: 350px;
-            height: 350px;
-            border: 5px solid black;
+            height: 430px;
+            border: 5px solid rgb(140, 142, 241);
             border-radius: 20px;
             background-color: greenyellow;
             padding: 15px;
@@ -40,16 +40,21 @@
         }
         .Calculator h1{
             text-align: center;
+            color: rgb(218, 153, 35);
         }
         .Calculator input{
             background-color: violet;
             border-radius:20px;
             height: 20px;
+            box-shadow:6px 5px 10px rgb(235, 165, 235) ;
         }
         .Calculator button{
             background-color: rgb(118, 134, 228);
             border-radius: 30px;
             padding: 13px;
+            box-shadow:6px 5px 10px rgb(151, 164, 238) ;
+            font-size: 25px;
+            color: rgb(173, 238, 247);
         }
         h1{
             font-size: 20px;
@@ -59,16 +64,23 @@
             font-size: 50px;
             text-align: center;
             color: rgb(55, 63, 139);
+            text-shadow: 5px 5px 10px rgb(87, 92, 141);
         }
         body{
             background-color: burlywood;
         }
         .img{
             border-radius: 20px;
-            border: 5px solid grey;
+            border: 5px solid rgb(140, 142, 241);
         }
         input{
             margin: 10px;
+            color: rgb(242, 250, 125);
+            font-size: 20px;
+        }
+        label{
+            color: rgb(1, 119, 230);
+            font-size: 25px;
         }
     </style>    
 </head>
@@ -82,15 +94,15 @@
         <h1>SPEED RATE</h1>
         <label for="" style="margin-left: 20px;">ความเร็วรอบ (n)</label>
         <br>
-        <input type="text" name="" id="n" size=""> (rev/min)
+        <input type="text" name="" id="n" size="18"> (rev/min)
         <br>
         <label for="" style="margin-left: 20px;">เส้นผ่าศูนย์กลางงาน (D)</label>
         <br>
-        <input type="text" name="" id="D" size=""> (mm)
+        <input type="text" name="" id="D" size="18"> (mm)
         <br>
         <label for="" style="margin-left: 20px;">SPEED RATE (Vc)</label>
         <br>
-        <input type="text" name="" id="SPEEDRATE" size=""> (m/min)
+        <input type="text" name="" id="SPEEDRATE" size="18"> (m/min)
         <br>
         <button onclick="SPEEDRATE()">Enter</button>
     </div>
@@ -99,25 +111,25 @@
         <h1>FEED RATE</h1>
         <label for="" style="margin-left: 20px;">FEED PER TOOTH (fz)</label>
         <br>
-        <input type="text" name="" id="FEED PER TOOTH" size=""> (mm/tooth)
+        <input type="text" name="" id="FEED PER TOOTH" size="18"> (mm/tooth)
         <br>
         <label for="" style="margin-left: 20px;">จำนวนฟันตัด (Zn)</label>
         <br>
-        <input type="text" name="" id="NUMBER OF TEETH" size="">
+        <input type="text" name="" id="NUMBER OF TEETH" size="18">
         <br>
         <label for="" style="margin-left: 20px;">ความเร็วรอบ (n)</label>
         <br>
-        <input type="text" name="" id="n1" size=""> (rev/min)
+        <input type="text" name="" id="n1" size="18"> (rev/min)
         <br>
         <label for="" style="margin-left: 20px;">FEED RATE (Vf)</label>
         <br>
-        <input type="text" name="" id="FEED RATE" size=""> (mm/min)
+        <input type="text" name="" id="FEED RATE" size="18"> (mm/min)
         <br>
         <button class="botton2" onclick="FEEDRATE()">Enter</button>
     </div>
   </div>
   <div class="container">
-    <img class="img" src="https://www.sandvik.coromant.com/SiteCollectionImages/knowledge/parting-and-grooving/chip-control.jpg" alt="">
+    <img class="img" src="https://sites.google.com/site/aarlek567/_/rsrc/1477367046510/home/kar-khanwn-khwamrew-rxb/Cap.PNG" alt="">
   </div>
 </body>
 </html>
